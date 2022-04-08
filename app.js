@@ -1,25 +1,23 @@
-const calculator = {
-    plus :function(a, b){
-        console.log("hello");
-        return a + b;
-        console.log("byebye");
-    },
-    minus :function(a, b){
-        return a - b
-    },
-    times :function(a, b){
-        return a * b    },
-    divide :function(a, b){
-        return a / b
-    },
-    power :function(a, b){
-        return a ** b;
-    },
-};
+const age = parseInt(prompt("How old are you?"));
+if(isNaN(age) || age < 0 ) {
+    console.log("Please write a real positive number");
+} else if(age<18) {
+    console.log("You are too young.")
+} else if(age >=18 && age <=50) {
+    console.log("You can drink")
+} else if(age >50 && age <=80){
+    ("You should exercise")
+} else if(age >80) {
+    console.log("You can do whatever you want.");
+}
+ 
+//In javascript [ and = &&  , or = || ]
+true && true === true
+true && false === false
+false && true === false
+false && false === false
 
-const plusResult = calculator.plus(2,3);
-const minusResult = calculator.minus(plusResult,10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
-
+true || true === true
+true || false === true
+false || true === true
+false || false === false
