@@ -53,3 +53,4 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
         toDos = parsedToDos;
         parsedToDos.forEach(paintToDo); 
 }
+
